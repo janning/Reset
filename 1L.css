@@ -1,7 +1,10 @@
 /* ----------  --------------------------------------------------  ---------- */
 
-/* This reset should be good for Chrome & Safari ("webkit"-based browsers) */
-/* Opportunities for hair-splitting may present themselves though */
+/* This reset should be good for Chrome & Safari ("webkit"-based browsers).
+ * Opportunities for hair-splitting may present themselves throughout.
+ * This is the long version with comments. A short/consolidated version
+ * (reset only) is also available in a separate file (1S.css).
+ */
 /* SOURCE: https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css */
 
 /* ---------- STUFF I SHOULD PROBABLY KEEP IN HERE -------------------------- */
@@ -106,22 +109,25 @@ hr {
 /* The <hr> tag is supposed to represent a thematic break while acting as a
  * carriage return, similar to the <br> tag but w/ more meaning perhaps.
  */
-/* ----------  --------------------------------------------------  ---------- */
+
+/* ---------- SEEMS FINE, BUT MIGHT REVISIT LATER ---------------  ---------- */
 video {
-    object-fit: contain;
+  object-fit: contain;
 #if defined(WTF_PLATFORM_IOS) && WTF_PLATFORM_IOS
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 #endif
 }
+/* ----------  --------------------------------------------------  ---------- */
+
 /* heading elements */
 h1 {
-    display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67__qem;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  font-size: 2em; /* Default = font-size: 2em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 0.67__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 0.67em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 :matches(article, aside, nav, section) h1 {
     font-size: 1.5em;
@@ -192,6 +198,15 @@ h6 {
     -webkit-margin-end: 0;
     font-weight: bold;
 }
+
+/* For SEO and in-page navigation purposes, it may be beneficial to have
+ * a heading level or heading levels that have "display: inline;" instead
+ * for those cases where you would normally bold the lead-in word, sentence,
+ * or sentence fragment of paragraphs.
+ */
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* tables */
 table {
     display: table;
@@ -214,6 +229,9 @@ tfoot {
     vertical-align: middle;
     border-color: inherit;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* for tables without table section elements (can happen with XHTML or dynamically created tables) */
 table > tr {
     vertical-align: middle;
@@ -240,6 +258,9 @@ caption {
     display: table-caption;
     text-align: -webkit-center;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* lists */
 ul, menu, dir {
     display: block;
@@ -287,6 +308,9 @@ ol ul, ul ol, ul ul, ol ol {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* form elements */
 form {
     display: block;
@@ -315,6 +339,9 @@ fieldset {
 button {
     -webkit-appearance: button;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* Form controls don't go vertical. */
 input, textarea, keygen, select, button, meter, progress {
     -webkit-writing-mode: horizontal-tb !important;
@@ -828,6 +855,9 @@ option {
 output {
     display: inline;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* form validation message bubble */
 ::-webkit-validation-bubble {
     display: inline-block;
@@ -885,6 +915,9 @@ output {
     height: 16px;
 }
 #if defined(ENABLE_METER_ELEMENT) && ENABLE_METER_ELEMENT
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* meter */
 meter {
     -webkit-appearance: meter;
@@ -895,6 +928,9 @@ meter {
     vertical-align: -0.2em;
 }
 #endif
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* progress */
 progress {
     -webkit-appearance: progress-bar;
@@ -922,6 +958,9 @@ progress::-webkit-progress-value {
     width: 50%; /* should be removed later */
     box-sizing: border-box;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* inline elements */
 u, ins {
     text-decoration: underline;
@@ -965,6 +1004,9 @@ sup {
 nobr {
     white-space: nowrap;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* states */
 :focus {
     outline: auto 5px -webkit-focus-ring-color;
@@ -988,6 +1030,9 @@ a:any-link {
 a:any-link:active {
     color: -webkit-activelink;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* HTML5 ruby elements */
 ruby, rt {
     text-indent: 0; /* blocks used for ruby rendering should not trigger this */
@@ -1004,6 +1049,9 @@ ruby > rt {
 ruby > rp {
     display: none;
 }
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* other elements */
 noframes {
     display: none;
@@ -1057,6 +1105,9 @@ attachment {
 #endif
 }
 #endif
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* page */
 @page {
     /* FIXME: Define the right default values for page properties. */
