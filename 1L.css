@@ -246,15 +246,9 @@ tfoot {
 /* for tables without table section elements
  * (can happen with XHTML or dynamically created tables)
  */
-table > tr {
-    vertical-align: middle;
-}
-col {
-    display: table-column;
-}
-colgroup {
-    display: table-column-group;
-}
+table > tr { vertical-align: middle; }
+col { display: table-column; }
+colgroup { display: table-column-group; }
 tr {
     display: table-row;
     vertical-align: inherit;
@@ -264,12 +258,10 @@ td, th {
     display: table-cell;
     vertical-align: inherit;
 }
-th {
-    font-weight: bold;
-}
+th { font-weight: bold; }
 caption {
     display: table-caption;
-    text-align: -webkit-center;
+    text-align: -webkit-center; /* Could use left */
 }
 
 /* ----------  --------------------------------------------------  ---------- */
