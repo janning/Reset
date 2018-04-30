@@ -111,7 +111,8 @@ article, aside, nav, section {
 /* For SEO and in-page navigation purposes, it may be beneficial to have
  * a heading level or heading levels that have "display: inline;" instead
  * for those cases where you would normally bold the lead-in word, sentence,
- * or sentence fragment of paragraphs.
+ * or sentence fragment of paragraphs.  All heading levels reset to 1em to
+ * force web designer to be purposeful/intentional in setting font sizes.
  */
 
 /* ----------  --------------------------------------------------  ---------- */
