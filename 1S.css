@@ -169,33 +169,22 @@ li {
 /* ----------  --------------------------------------------------  ---------- */
 
 /* form elements */
-form {
-    display: block;
-    margin-top: 0__qem;
-}
-label {
-    cursor: default;
-}
-legend {
-    display: block;
-    -webkit-padding-start: 2px;
-    -webkit-padding-end: 2px;
-    border: none;
+form, legend, fieldset { display: block; }
+form { margin-top: 0; } /* Default = margin-top: 0__qem; */
+label { cursor: default; }
+legend, fieldset {
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  border: none;
 }
 fieldset {
-    display: block;
-    -webkit-margin-start: 2px;
-    -webkit-margin-end: 2px;
-    -webkit-padding-before: 0.35em;
-    -webkit-padding-start: 0.75em;
-    -webkit-padding-end: 0.75em;
-    -webkit-padding-after: 0.625em;
-    border: 2px groove ThreeDFace;
-    min-width: min-content;
+  -webkit-margin-start: 0; /* Default = -webkit-margin-start: 2px; */
+  -webkit-margin-end: 0; /* Default = -webkit-margin-end: 2px; */
+  -webkit-padding-before: 0; /* Default = -webkit-padding-before: 0.35em; */
+  -webkit-padding-after: 0; /* -webkit-padding-after: 0.625em; */
+  min-width: min-content; /* Seems okay */
 }
-button {
-    -webkit-appearance: button;
-}
+button { -webkit-appearance: button; }
 
 /* ----------  --------------------------------------------------  ---------- */
 
