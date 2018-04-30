@@ -37,27 +37,21 @@
 /* Guess it doesn't hurt to be explicit... */
 
 html { display: block }
-
 head, link, meta, script, style, title { display: none }
 
 /* generic block-level elements */
-
 body, p, div, hr, footer, header, nav, article, aside, main, section, center,
 address, blockquote, figcaption, figure, hgroup, layer { display: block }
-
 marquee { display: inline-block }
-
 q { display: inline }
 
 body { margin: 0 }
-
 p, hr, blockquote, figure {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
 }
-
 /* Although I couldn't find a definitive answer as to whether or not webkit
  * supports shorthand (i.e. -webkit-margin: 0; ), I'm assuming that it doesn't
  * because the documentation doesn't list it as an available property.
@@ -91,7 +85,6 @@ video {
 /* ----------  --------------------------------------------------  ---------- */
 
 /* heading elements */
-
 h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: 1em;
@@ -101,13 +94,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-margin-end: 0;
   font-weight: bold;
 }
-
 article, aside, nav, section {
   font-size: 1em;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
-
 /* For SEO and in-page navigation purposes, it may be beneficial to have
  * a heading level or heading levels that have "display: inline;" instead
  * for those cases where you would normally bold the lead-in word, sentence,
