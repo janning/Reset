@@ -324,8 +324,8 @@ legend {
 }
 fieldset {
   display: block;
-  -webkit-padding-start: 0; /* Default = -webkit-margin-start: 2px; */
-  -webkit-padding-end: 0; /* Default = -webkit-margin-end: 2px; */
+  -webkit-margin-start: 0; /* Default = -webkit-margin-start: 2px; */
+  -webkit-margin-end: 0; /* Default = -webkit-margin-end: 2px; */
   -webkit-padding-before: 0; /* Default = -webkit-padding-before: 0.35em; */
   -webkit-padding-start: 0; /* -webkit-padding-start: 0.75em; */
   -webkit-padding-end: 0; /* Default = -webkit-padding-end: 0.75em; */
