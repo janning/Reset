@@ -135,30 +135,19 @@ tfoot { display: table-footer-group; }
 /* for tables without table section elements
  * (can happen with XHTML or dynamically created tables)
  */
-table > tr {
-    vertical-align: middle;
-}
-col {
-    display: table-column;
-}
-colgroup {
-    display: table-column-group;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-td, th {
-    display: table-cell;
-    vertical-align: inherit;
-}
-th {
-    font-weight: bold;
-}
+table > tr { vertical-align: middle; }
 caption {
-    display: table-caption;
-    text-align: -webkit-center;
+  display: table-caption;
+  text-align: -webkit-center; /* Could use -webkit-left */
+}
+col { display: table-column; }
+colgroup { display: table-column-group; }
+tr, th, td { vertical-align: inherit; }
+th, td { display: table-cell; }
+th { font-weight: bold; }
+tr {
+  display: table-row;
+  border-color: inherit;
 }
 
 /* ----------  --------------------------------------------------  ---------- */
