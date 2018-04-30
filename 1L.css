@@ -122,7 +122,7 @@ video {
 /* heading elements */
 h1 {
   display: block;
-  font-size: 2em; /* Default = font-size: 2em; */
+  font-size: 1em; /* Default = font-size: 2em; */
   -webkit-margin-before: 0; /* Default = -webkit-margin-before: 0.67__qem; */
   -webkit-margin-after: 0; /* Default = -webkit-margin-after: 0.67em; */
   -webkit-margin-start: 0;
@@ -130,79 +130,80 @@ h1 {
   font-weight: bold;
 }
 :matches(article, aside, nav, section) h1 {
-    font-size: 1.5em;
-    -webkit-margin-before: 0.83__qem;
-    -webkit-margin-after: 0.83em;
+  font-size: 1em; /* Default = font-size: 1.5em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 0.83__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 0.83em; */
 }
 :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-    font-size: 1.17em;
-    -webkit-margin-before: 1__qem;
-    -webkit-margin-after: 1em;
+  font-size: 1em; /* Default = font-size: 1.17em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1em; */
 }
 :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-    font-size: 1.00em;
-    -webkit-margin-before: 1.33__qem;
-    -webkit-margin-after: 1.33em;
+  font-size: 1.00em;
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1.33__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1.33em; */
 }
 :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-    font-size: .83em;
-    -webkit-margin-before: 1.67__qem;
-    -webkit-margin-after: 1.67em;
+  font-size: 1em; /* Default = font-size: .83em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1.67__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1.67em; */
 }
 :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-    font-size: .67em;
-    -webkit-margin-before: 2.33__qem;
-    -webkit-margin-after: 2.33em;
+  font-size: 1em; /* Default = font-size: .67em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 2.33__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 2.33em; */
 }
 h2 {
-    display: block;
-    font-size: 1.5em;
-    -webkit-margin-before: 0.83__qem;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1em; /* Default = font-size: 1.5em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 0.83__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 0.83em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 h3 {
-    display: block;
-    font-size: 1.17em;
-    -webkit-margin-before: 1__qem;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1em; /* Default = font-size: 1.17em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 h4 {
-    display: block;
-    -webkit-margin-before: 1.33__qem;
-    -webkit-margin-after: 1.33em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1.33__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1.33em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 h5 {
-    display: block;
-    font-size: .83em;
-    -webkit-margin-before: 1.67__qem;
-    -webkit-margin-after: 1.67em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1em; /* Default = font-size: .83em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 1.67__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 1.67em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 h6 {
-    display: block;
-    font-size: .67em;
-    -webkit-margin-before: 2.33__qem;
-    -webkit-margin-after: 2.33em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1em; /* Default = font-size: .67em; */
+  -webkit-margin-before: 0; /* Default = -webkit-margin-before: 2.33__qem; */
+  -webkit-margin-after: 0; /* Default = -webkit-margin-after: 2.33em; */
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
 }
 
 /* For SEO and in-page navigation purposes, it may be beneficial to have
  * a heading level or heading levels that have "display: inline;" instead
  * for those cases where you would normally bold the lead-in word, sentence,
- * or sentence fragment of paragraphs.
+ * or sentence fragment of paragraphs.  All heading levels reset to 1em to
+ * force web designer to be purposeful/intentional in setting font sizes.
  */
 
 /* ----------  --------------------------------------------------  ---------- */
