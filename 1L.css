@@ -220,30 +220,32 @@ h6 {
 
 /* tables */
 table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: gray;
+  display: table;
+  border-collapse: separate; /* Could use "collapse" for simpler websites */
+  border-spacing: 0; /* Default = border-spacing: 2px; */
+  border-color: gray;
 }
 thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
 tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
 tfoot {
-    display: table-footer-group;
-    vertical-align: middle;
-    border-color: inherit;
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
 }
 
 /* ----------  --------------------------------------------------  ---------- */
 
-/* for tables without table section elements (can happen with XHTML or dynamically created tables) */
+/* for tables without table section elements
+ * (can happen with XHTML or dynamically created tables)
+ */
 table > tr {
     vertical-align: middle;
 }
