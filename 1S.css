@@ -144,51 +144,23 @@ tr {
 /* ----------  --------------------------------------------------  ---------- */
 
 /* lists */
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1__qem;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 40px;
+ul, menu, dir, ol, dd, dl, dt { display: block; }
+ul, menu, dir, ol, ol ul, ul ol, ul ul, ol ol, dl {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
-ol {
-    display: block;
-    list-style-type: decimal;
-    -webkit-margin-before: 1__qem;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 40px;
+ul, menu, dir, ol, dl {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
 }
+ul, menu, dir, ol, dd { -webkit-padding-start: 0; }
+ul, menu, dir { list-style-type: disc; } /* Could use other or force w/ none */
+ul ul, ol ul { list-style-type: circle; } /* Could use other or force w/ none */
+ol ol ul, ol ul ul, ul ol ul, ul ul ul { list-style-type: square; }
+ol { list-style-type: decimal; } /* Could use some other or force with none */
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-ul ul, ol ul {
-    list-style-type: circle;
-}
-ol ol ul, ol ul ul, ul ol ul, ul ul ul {
-    list-style-type: square;
-}
-dd {
-    display: block;
-    -webkit-margin-start: 40px;
-}
-dl {
-    display: block;
-    -webkit-margin-before: 1__qem;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-}
-dt {
-    display: block;
-}
-ol ul, ul ol, ul ul, ol ol {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+  display: list-item;
+  text-align: -webkit-match-parent;  /* Seems fine */
 }
 
 /* ----------  --------------------------------------------------  ---------- */
