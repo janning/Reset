@@ -335,7 +335,8 @@ fieldset {
 }
 button { -webkit-appearance: button; }
 
-/* ----------  --------------------------------------------------  ---------- */
+/* ---------- EXTREMELY LONG SECTION, REVISIT LATER ------------------------- */
+/* ---------- (WHEN IMPEMENTING FORMS) -------------------------------------- */
 
 /* Form controls don't go vertical. */
 input, textarea, keygen, select, button, meter, progress {
@@ -851,7 +852,8 @@ output {
     display: inline;
 }
 
-/* ----------  --------------------------------------------------  ---------- */
+/* ---------- UNSURE OF USE CASES, REVISIT LATER ---------------------------- */
+/* ---------- (WHEN IMPLEMENTING VALIDATION BUBBLES) ------------------------ */
 
 /* form validation message bubble */
 ::-webkit-validation-bubble {
@@ -909,49 +911,51 @@ output {
     overflow: hidden;
     height: 16px;
 }
-#if defined(ENABLE_METER_ELEMENT) && ENABLE_METER_ELEMENT
 
 /* ----------  --------------------------------------------------  ---------- */
 
+#if defined(ENABLE_METER_ELEMENT) && ENABLE_METER_ELEMENT
+
 /* meter */
 meter {
-    -webkit-appearance: meter;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 1em;
-    width: 5em;
-    vertical-align: -0.2em;
-}
+  -webkit-appearance: meter;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 1em;
+  width: 5em; /* May want this to be proportionate to meter max */
+  vertical-align: 0; /* Default = vertical-align: -0.2em; */
+} /* Meters can tie to forms, can be used to indicate stage of completion */
+
 #endif
 
 /* ----------  --------------------------------------------------  ---------- */
 
 /* progress */
 progress {
-    -webkit-appearance: progress-bar;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 1em;
-    width: 10em;
-    vertical-align: -0.2em;
-}
+  -webkit-appearance: progress-bar;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 1em;
+  width: 10em; /* May want this to be proportionate to prgoress max */
+  vertical-align: 0; /* Default = vertical-align: -0.2em; */
+} /* Progress bars can be animated via JS, can show percentage loaded */
 progress::-webkit-progress-inner-element {
-    -webkit-appearance: inherit;
-    box-sizing: inherit;
-    height: 100%;
-    width: 100%;
+  -webkit-appearance: inherit;
+  box-sizing: inherit;
+  height: 100%;
+  width: 100%;
 }
 progress::-webkit-progress-bar {
-    background-color: gray;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: gray; /* Would want to swap out for a branding color */
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 progress::-webkit-progress-value {
-    background-color: green;
-    height: 100%;
-    width: 50%; /* should be removed later */
-    box-sizing: border-box;
+  background-color: green; /* Would want to swap out for a branding color */
+  height: 100%;
+  width: 100%; /* Default = width: 50%; */ /* should be removed later */
+  box-sizing: border-box;
 }
 
 /* ----------  --------------------------------------------------  ---------- */
