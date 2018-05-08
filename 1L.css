@@ -961,48 +961,36 @@ progress::-webkit-progress-value {
 /* ----------  --------------------------------------------------  ---------- */
 
 /* inline elements */
-u, ins {
-    text-decoration: underline;
-}
-strong, b {
-    font-weight: bold;
-}
-i, cite, em, var, address, dfn {
-    font-style: italic;
-}
-tt, code, kbd, samp {
-    font-family: monospace;
-}
-pre, xmp, plaintext, listing {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1__qem 0;
-}
+b, strong { font-weight: bold; }
+u, ins { text-decoration: underline; }
+s, strike, del { text-decoration: line-through; }
+i, em, var, cite, dfn, address { font-style: italic; }
 mark {
-    background-color: yellow;
-    color: black;
-}
-big {
-    font-size: larger;
-}
-small {
-    font-size: smaller;
-}
-s, strike, del {
-    text-decoration: line-through;
-}
+  background-color: yellow;
+  color: black;
+} /* Like highlighting */
+
+code, kbd, samp, tt { font-family: monospace; } /* HTML5 doesn't support "tt" */
+pre, xmp, listing, plaintext {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 0; /* Default = margin: 1__qem 0; */
+} /* HTML5 doesn't support the last three, so use "pre" */
+
+big { font-size: larger; }
+small { font-size: smaller; }
+
 sub {
-    vertical-align: sub;
-    font-size: smaller;
+  vertical-align: sub;
+  font-size: smaller;
 }
 sup {
-    vertical-align: super;
-    font-size: smaller;
+  vertical-align: super;
+  font-size: smaller;
 }
-nobr {
-    white-space: nowrap;
-}
+
+nobr { white-space: nowrap; } /* This has been deprecated */
 
 /* ----------  --------------------------------------------------  ---------- */
 
