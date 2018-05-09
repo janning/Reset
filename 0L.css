@@ -26,3 +26,24 @@
 /* Source: https://css-tricks.com/international-box-sizing-awareness-day/ */
 
 /* ----------  --------------------------------------------------  ---------- */
+
+
+
+/* ---------- TOOLBOX ------------------------------------------------------- */
+
+/* clearfix hack */
+.group { display: inline-block; }
+.group:after {
+  height: 0;
+  width: 0;
+  visibility: hidden; /* standard */
+  display: table;
+  clear: both;  /* the star of the show */
+  line-height: 0; /* non-standard */
+  content: ""; /* usually a period or space */
+} /* Keeping in mind that all versions of this hack have compatability issues */
+
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/* Source: https://css-tricks.com/snippets/css/clear-fix/ */
