@@ -31,6 +31,20 @@
 
 /* ---------- TOOLBOX ------------------------------------------------------- */
 
+ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+li { padding-left: 1em; } /* Indentation or space before the bullet */
+li:before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 1em; /* Space between the bullet and the text */
+  color: inherit; /* This is the color of the bullet only */
+}
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* clearfix hack */
 .group { display: inline-block; }
 .group:after {
