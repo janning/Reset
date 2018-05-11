@@ -31,6 +31,7 @@
 
 /* ---------- TOOLBOX ------------------------------------------------------- */
 
+/* For fine-grained control of lists */
 ul {
   list-style: none; /* Remove list bullets */
   padding: 0;
@@ -41,6 +42,20 @@ li:before {
   content: "•"; /* Insert content that looks like bullets */
   padding-right: 1em; /* Space between the bullet and the text */
   color: inherit; /* This is the color of the bullet only */
+}
+
+/* ----------  --------------------------------------------------  ---------- */
+
+/* For sections in contracts */
+body { counter-reset: section; } /* Set "section" to 0 */
+h1 { counter-reset: subsection; } /* Set "subsection" to 0 */
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
 }
 
 /* ----------  --------------------------------------------------  ---------- */
