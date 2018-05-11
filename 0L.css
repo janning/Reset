@@ -60,6 +60,21 @@ h2::before {
 
 /* ----------  --------------------------------------------------  ---------- */
 
+/* For 3-column text flow with gap adjustment */
+.newspaper { /* line between columns is optional */
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 3em; /* Chrome, Safari, Opera */
+    -moz-column-gap: 3em; /* Firefox */
+    column-gap: 3em;
+    -webkit-column-rule: 0 double black; /* Chrome, Safari, Opera */
+    -moz-column-rule: 0 double black; /* Firefox */
+    column-rule: 0 double black;
+} /* Ideally the gap would be based on the padding value */
+
+/* ----------  --------------------------------------------------  ---------- */
+
 /* clearfix hack */
 .group { display: inline-block; }
 .group:after {
